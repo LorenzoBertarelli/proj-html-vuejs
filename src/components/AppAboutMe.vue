@@ -24,7 +24,6 @@
     <section>
         <div class="container">
             <div class="row-left row">    
-                <img class="man" src="../assets/images/home-movation-video-poster-670x450.jpg" alt="">
                 <a class="youtube" href=""><img src="../assets/images/icon-youtube-play.png" alt=""></a>
             </div>
             <div class="row-right row">
@@ -58,15 +57,14 @@
         .row-left {
             margin-top: 50px;
             width: 60%;
-            .man {
-                position: relative;
-                border-radius: 3%;
-                width: 600px;
-            }
+            height: 400px;
+            margin-right: 40px;
+            border-radius: 10px;
+            background-image: url(../assets/images/home-movation-video-poster-670x450.jpg);
             .youtube {
-                position: absolute;
-                left: 24%;
-                top: 113%;
+                position: relative;
+                left: 40%;
+                top: 40%;
             }
         }
 
