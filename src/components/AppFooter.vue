@@ -1,7 +1,14 @@
 <script>
+import { applyStyles } from '@popperjs/core';
+import AppIcons from './AppIcons.vue';
+
+
     export default {
-        name: "AppFooter",
+    name: "AppFooter",
+    components: {
+      AppIcons
     }
+}
 </script>
 
 <template>
@@ -16,26 +23,14 @@
     <!-- Left -->
 
     <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+    <div class="loghi">
+                <AppIcons
+                    twitterIcon
+                    instagramIcon
+                    facebookIcon
+                    linkedinIcon
+                />
+            </div>
     <!-- Right -->
   </section>
   <!-- Section: Social media -->

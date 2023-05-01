@@ -1,6 +1,11 @@
 <script>
+import AppIcons from './AppIcons.vue';
+
     export default{
         name: "AppHeader",
+        components: {
+            AppIcons
+        }
     }
 </script>
 
@@ -20,10 +25,12 @@
                 <li><a href="">Shop</a></li>
             </ul>
             <div class="loghi">
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <AppIcons
+                    twitterIcon
+                    instagramIcon
+                    facebookIcon
+                    linkedinIcon
+                />
             </div>
         </div>
     </div>
